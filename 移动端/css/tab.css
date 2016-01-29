@@ -60,13 +60,13 @@ html,body{
     position: absolute;
     border-radius: 50%;
     left: 50%;
-    opacity: 1;
 }
 .a1 .a1-list1{
     height: 215px;
     width: 215px;
     margin-left: -108px;
     top: 16%;
+    opacity: 0;
 }
 .a1 img{
     width: 100%;
@@ -77,6 +77,17 @@ html,body{
     width: 190px;
     margin-left: -95px;
     top: 17.2%;
+    opacity: 1;
+    -webkit-transform: scale(0,0);
+    transform: scale(0,0);
+}
+#a1 .a1-list1{
+    animation:opacityMove 0.55s  both;
+    -webkit-animation:opacityMove 0.55s  both;
+}
+#a1 .a1-list2{
+    animation:list2In 0.4s 0.5s both ;
+    -webkit-animation:list2In 0.4s  0.5s both;
 }
 .a1 .a1-list1 img,.a1 .a1-list2 img{
     background-size: 100% 100%;
@@ -89,11 +100,17 @@ html,body{
     opacity: 1;
     height: 25%;
     top: 40%;
+    -webkit-transform: scale(0,0);
+    transform: scale(0,0);
+}
+#a1 .a1-list3{
+    animation:list2In 1s 0.7s both ;
+    -webkit-animation:list2In 1s  0.7s both;
 }
 .a1 .a1-list4{
     position: absolute;
     left: 36%;
-    opacity: 1;
+    opacity: 0;
     height: 120px;
     width: 62px;
     font-size: 58px;
@@ -101,10 +118,18 @@ html,body{
     font-weight: bold;
     top: 40%;
 }
+#a1 .a1-list4{
+    animation:fadeInLeft 1s 0.8s both ;
+    -webkit-animation:fadeInLeft 1s  0.8s both;
+}
+#a1 .a1-list5{
+    animation:fadeInRight 1s 0.8s both ;
+    -webkit-animation:fadeInRight 1s  0.8s both;
+}
 .a1 .a1-list5{
     position: absolute;
     right: 36%;
-    opacity: 1;
+    opacity: 0;
     height: 120px;
     width: 62px;
     font-size: 48px;
@@ -116,24 +141,26 @@ html,body{
     position: absolute;
     left: 50%;
     margin-left: -35.5%;
-    opacity: 1;
+    opacity: 0;
     height: 36px;
     width: 79%;
     font-size: 22px;
     color: #fff;
     top: 70%;
 }
-#a1-list6 p{
-    transform: rotate(720deg);
-    -webkit-transform: rotate(720deg);
-    transition: 5s;
-    -webkit-transition: 5s;
+#a1 .a1-list6{
+    animation:fadeInUp 1s 1.9s both ;
+    -webkit-animation:fadeInUp 1s  1.9s both;
+}
+#a1 .a1-list7{
+    animation:list2In 1s 1.8s both ;
+    -webkit-animation:list2In 1s  1.8s both;
 }
 .a1 .a1-list7{
     position: absolute;
     left: 50%;
     margin-left: -100px;
-    opacity: 1;
+    opacity: 0;
     height: 80px;
     width: 200px;
     border-radius: 40px;
@@ -151,8 +178,72 @@ html,body{
     left: 14%;
     width: 16%;
     height: 77%;
-    opacity: 1;
+    opacity: 0;
     top: 10%;
+}
+#a2 .a2-list1{
+    animation:zoomIn 0.5s both ;
+    -webkit-animation:zoomIn 0.5s both;
+}
+#a2 .a2-list2 a:nth-child(1){
+    animation:zoomIn 1s 0.1s both ;
+    -webkit-animation:zoomIn 1s 0.1s both;
+}
+#a2 .a2-list2 a:nth-child(2){
+    animation:zoomIn 1s 0.15s both ;
+    -webkit-animation:zoomIn 1s 0.15s both;
+}
+#a2 .a2-list2 a:nth-child(3){
+    animation:zoomIn 1s 0.2s both ;
+    -webkit-animation:zoomIn 1s 0.2s both;
+}
+#a2 .a2-list2 a:nth-child(4){
+    animation:zoomIn 1s 0.25s both ;
+    -webkit-animation:zoomIn 1s 0.25s both;
+}
+#a2 .a2-list2 a:nth-child(5){
+    animation:zoomIn 1s 0.3s both ;
+    -webkit-animation:zoomIn 1s 0.3s both;
+}
+#a2 .a2-list3 img:nth-child(1){
+    animation:zoomIn 1s 0.1s both ;
+    -webkit-animation:zoomIn 1s 0.1s both;
+}
+#a2 .a2-list3 img:nth-child(2){
+    animation:zoomIn 1s 0.15s both ;
+    -webkit-animation:zoomIn 1s 0.15s both;
+}
+#a2 .a2-list3 img:nth-child(3){
+    animation:zoomIn 1s 0.2s both ;
+    -webkit-animation:zoomIn 1s 0.2s both;
+}
+#a2 .a2-list3 img:nth-child(4){
+    animation:zoomIn 1s 0.25s both ;
+    -webkit-animation:zoomIn 1s 0.25s both;
+}
+#a2 .a2-list3 img:nth-child(5){
+    animation:zoomIn 1s 0.3s both ;
+    -webkit-animation:zoomIn 1s 0.3s both;
+}
+#a2 .a2-list4 p:nth-child(1){
+    animation:fadeInRight 1s 0.1s both ;
+    -webkit-animation:fadeInRight 1s 0.1s both;
+}
+#a2 .a2-list4 p:nth-child(2){
+    animation:fadeInRight 1s 0.15s both ;
+    -webkit-animation:fadeInRight 1s 0.15s both;
+}
+#a2 .a2-list4 p:nth-child(3){
+    animation:fadeInRight 1s  0.1s both ;
+    -webkit-animation:fadeInRight 1s  0.1s both;
+}
+#a2 .a2-list4 p:nth-child(4){
+    animation:fadeInRight 1s 0.25s both ;
+    -webkit-animation:fadeInRight 1s 0.25s both;
+}
+#a2 .a2-list4 p:nth-child(5){
+    animation:fadeInRight 1s 0.3s both ;
+    -webkit-animation:fadeInRight 1s 0.3s both;
 }
 .a2 img{
     width: 100%;
@@ -164,7 +255,7 @@ html,body{
     left: 22%;
     width: 66%;
     height: 3%;
-    opacity: 1;
+    opacity: 0;
     top: 21.5%;
 }
 .a2 .a2-list2 a:nth-child(2){
@@ -173,7 +264,7 @@ html,body{
     left: 22%;
     width: 66%;
     height: 3%;
-    opacity: 1;
+    opacity: 0;
     top: 37.5%;
 }
 .a2 .a2-list2 a:nth-child(3){
@@ -182,7 +273,7 @@ html,body{
     left: 22%;
     width: 66%;
     height: 3%;
-    opacity: 1;
+    opacity: 0;
     top: 53.5%;
 }
 .a2 .a2-list2 a:nth-child(4){
@@ -191,7 +282,7 @@ html,body{
     left: 22%;
     width: 66%;
     height: 3%;
-    opacity: 1;
+    opacity: 0;
     top: 69.5%;
 }
 .a2 .a2-list2 a:nth-child(5){
@@ -200,16 +291,17 @@ html,body{
     left: 22%;
     width: 66%;
     height: 3%;
-    opacity: 1;
+    opacity: 0;
     top: 85.5%;
 }
+
 .a2 .a2-list3 img:nth-child(1){
     position: absolute;
     left: 14.3%;
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    opacity: 1;
+    opacity: 0;
     top: 10%;
 }
 .a2 .a2-list3 img:nth-child(2){
@@ -218,7 +310,7 @@ html,body{
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    opacity: 1;
+    opacity: 0;
     top: 26%;
 }
 .a2 .a2-list3 img:nth-child(3){
@@ -227,7 +319,7 @@ html,body{
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    opacity: 1;
+    opacity: 0;
     top: 42%;
 }
 .a2 .a2-list3 img:nth-child(4){
@@ -236,7 +328,7 @@ html,body{
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    opacity: 1;
+    opacity: 0;
     top: 58%;
 }
 .a2 .a2-list3 img:nth-child(5){
@@ -245,7 +337,7 @@ html,body{
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    opacity: 1;
+    opacity: 0;
     top: 74%;
 }
 .a2 .a2-list4 p:nth-child(1){
@@ -255,7 +347,7 @@ html,body{
     font-size: 26px;
     font-weight: bold;
     color: #fff;
-
+    opacity: 0;
 }
 .a2 .a2-list4 p:nth-child(2){
     position: absolute;
@@ -264,6 +356,7 @@ html,body{
     font-size: 26px;
     font-weight: bold;
     color: #fff;
+    opacity: 0;
 }
 .a2 .a2-list4 p:nth-child(3){
     position: absolute;
@@ -272,6 +365,7 @@ html,body{
     font-size: 26px;
     font-weight: bold;
     color: #fff;
+    opacity: 0;
 }
 .a2 .a2-list4 p:nth-child(4){
     position: absolute;
@@ -280,6 +374,7 @@ html,body{
     font-size: 26px;
     font-weight: bold;
     color: #fff;
+    opacity: 0;
 }
 .a2 .a2-list4 p:nth-child(5){
     position: absolute;
@@ -288,24 +383,81 @@ html,body{
     font-size: 26px;
     font-weight: bold;
     color: #fff;
+    opacity: 0;
 }
 .a3 img{
     width: 100%;
     height: 100%;
+}
+#a3 .a3-list1 img:nth-child(1){
+    animation:fadeIn 0.6s ease both;
+    -webkit-animation:fadeIn 0.6s ease both;
+}
+#a3 .a3-list2 a:nth-child(1){
+    animation:fadeIn 0.6s ease 0.2s both; ;
+    -webkit-animation:fadeIn 0.6s ease 0.2s both;;
+}
+#a3 .a3-list1 img:nth-child(2){
+    animation:fadeIn 0.6s ease 0.4s both; ;
+    -webkit-animation:fadeIn 0.6s ease 0.4s both;;
+}
+#a3 .a3-list2 a:nth-child(2){
+    animation:fadeIn 0.6s ease 0.6s both; ;
+    -webkit-animation:fadeIn 0.6s ease 0.6s both;;
+}
+#a3 .a3-list1 img:nth-child(3){
+    animation:fadeIn 0.6s ease 0.8s both; ;
+    -webkit-animation:fadeIn 0.6s ease 0.8s both;;
+}
+#a3 .a3-list2 a:nth-child(3){
+    animation:fadeIn 0.6s ease 1s both;
+    -webkit-animation:fadeIn 0.6s ease 1s both;
+}
+#a3 .a3-list1 img:nth-child(4){
+    animation:fadeIn 0.6s ease 1.2s both;
+    -webkit-animation:fadeIn 0.6s ease 1.2s both;
+}
+#a3 .a3-list2 a:nth-child(4){
+    animation:fadeIn 0.6s ease 1.4s both;
+    -webkit-animation:fadeIn 0.6s ease 1.4s both;
+}
+#a3 .a3-list1 img:nth-child(5){
+    animation:fadeIn 0.6s ease 1.6s both;
+    -webkit-animation:fadeIn 0.6s ease 1.6s both;
+}
+#a3 .a3-list3 p:nth-child(1){
+    animation:fadeInRight 1s ease both;
+    -webkit-animation:fadeInRight 1s ease both;
+}
+#a3 .a3-list3 p:nth-child(2){
+    animation:fadeInLeft 1s ease 0.2s both;
+    -webkit-animation:fadeInLeft 1s ease 0.2s both;
+}
+#a3 .a3-list3 p:nth-child(3){
+    animation:fadeInRight 1s ease 0.6s both ;
+    -webkit-animation:fadeInRight 1s ease 0.6s both;
+}
+#a3 .a3-list3 p:nth-child(4){
+    animation:fadeInLeft 1s ease 1s both ;
+    -webkit-animation:fadeInLeft 1s ease 1s both;
+}
+#a3 .a3-list3 p:nth-child(5){
+    animation:fadeInRight 1s ease 1.4s both ;
+    -webkit-animation:fadeInRight 1s ease 1.4s both;
 }
 .a3 .a3-list1 img:nth-child(1){
      position: absolute;
      left: 28.2%;
      width: 90px;
      height: 90px;
-     opacity: 1;
+     opacity: 0;
      top: 9.5%;
  }
 .a3 .a3-list1 img:nth-child(2){
     position: absolute;
     width: 90px;
     height: 90px;
-    opacity: 1;
+    opacity: 0;
     left: 53%;
     top: 25%;
 }
@@ -313,7 +465,7 @@ html,body{
     position: absolute;
     width: 90px;
     height: 90px;
-    opacity: 1;
+    opacity: 0;
     left: 28%;
     top: 40.5%;
 }
@@ -321,7 +473,7 @@ html,body{
     position: absolute;
     width: 90px;
     height: 90px;
-    opacity: 1;
+    opacity: 0;
     left: 54%;
     top: 57%;
 
@@ -330,7 +482,7 @@ html,body{
     position: absolute;
     width: 90px;
     height: 90px;
-    opacity: 1;
+    opacity: 0;
     left: 28%;
     top:75%;
 }
@@ -341,7 +493,7 @@ html,body{
     width: 24.5%;
     height: 24.5%;
     margin-left: -100px;
-    opacity: 1;
+    opacity: 0;
     top: 13.5%;
 }
 .a3 .a3-list2 a:nth-child(2){
@@ -351,7 +503,7 @@ html,body{
     width: 25%;
     height: 29%;
     margin-left: -100px;
-    opacity: 1;
+    opacity: 0;
     top: 15.5%;
 }
 .a3 .a3-list2 a:nth-child(3){
@@ -361,7 +513,7 @@ html,body{
     width: 26%;
     height: 29%;
     margin-left: -100px;
-    opacity: 1;
+    opacity: 0;
     top: 44.6%;
 }
 .a3 .a3-list2 a:nth-child(4){
@@ -371,7 +523,7 @@ html,body{
     width: 26%;
     height: 40%;
     margin-left: -100px;
-    opacity: 1;
+    opacity: 0;
     top: 49%;
     transform:rotate(-3deg);
     -webkit-transform:rotate(-3deg);
@@ -382,6 +534,7 @@ html,body{
      top: 11.5%;
      font-size: 28px;
      color: #fff;
+     opacity: 0;
  }
 .a3 .a3-list3 p:nth-child(2){
     position: absolute;
@@ -389,6 +542,7 @@ html,body{
     top: 27.5%;
     font-size: 28px;
     color: #fff;
+    opacity: 0;
 }
 .a3 .a3-list3 p:nth-child(3){
     position: absolute;
@@ -396,6 +550,7 @@ html,body{
     top: 43%;
     font-size: 28px;
     color: #fff;
+    opacity: 0;
 }
 .a3 .a3-list3 p:nth-child(4){
     position: absolute;
@@ -403,6 +558,7 @@ html,body{
     top: 59.5%;
     font-size: 28px;
     color: #fff;
+    opacity: 0;
 }
 .a3 .a3-list3 p:nth-child(5){
     position: absolute;
@@ -410,14 +566,71 @@ html,body{
     top: 77.5%;
     font-size: 28px;
     color: #fff;
+    opacity: 0;
 }
 .a4 h2{
     position: absolute;
-    top: 9%;
+    margin-left: -240px;
+    top: 5%;
     font-size: 45px;
     font-weight: bold;
-    left: 6%;
-    color: gray;
+    left: 50%;
+    color: lavender;
+    opacity: 0;
+}
+#a4 h2{
+    animation:fadeInDown 0.8s ease 1 both;
+    -webkit-animation:fadeInDown 0.8s ease 1 both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
+}
+#a4 .a4-list1 p:nth-child(1){
+    animation:fadeInLeft 0.4s ease 0.2s 1 both;
+    -webkit-animation:fadeInLeft 0.4s ease 0.2s 1 both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
+}
+#a4 .a4-list1 p:nth-child(2){
+    animation:fadeInLeft 0.4s ease 0.4s 1 both;
+    -webkit-animation:fadeInLeft 0.4s ease 0.4s 1 both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
+}
+#a4 .a4-list1 p:nth-child(3){
+    animation:fadeInLeft 0.4s ease 0.6s 1 both;
+    -webkit-animation:fadeInLeft 0.4s ease 0.6s 1 both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
+}
+#a4 .a4-list1 p:nth-child(4){
+    animation:fadeInLeft 0.4s ease 0.8s 1 both;
+    -webkit-animation:fadeInLeft 0.4s ease 0.8s 1 both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
+}
+#a4 .a4-list1 p:nth-child(5){
+    animation:fadeInLeft 0.4s ease 1s 1 both;
+    -webkit-animation:fadeInLeft 0.4s ease 1s 1 both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
+}
+#a4 .a4-list1 p:nth-child(6){
+    animation:fadeInLeft 0.4s ease 1.2s 1 both;
+    -webkit-animation:fadeInLeft 0.4s ease 1.2s 1 both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
+}
+#a4 .a4-list1 p:nth-child(7){
+    animation:fadeInLeft 0.4s ease 1.4s 1 both;
+    -webkit-animation:fadeInLeft 0.4s ease 1.4s 1 both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
+}
+#a4 .a4-list1 p:nth-child(8){
+    animation:fadeInLeft 0.4s ease 1.6s 1 both;
+    -webkit-animation:fadeInLeft 0.4s ease 1.6s 1 both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
 }
 .a4 .a4-list1{
     width: 28%;
@@ -426,82 +639,138 @@ html,body{
     left: 0;
     top: 50%;
     margin-top: -67%;
-    background: gray;
-    opacity: 0.5;
 }
 .a4 .a4-list1 p:nth-child(1){
     position: absolute;
-    top: 13%;
-    left: 25%;
+    top: 14%;
+    left: 28%;
     font-size: 25px;
     font-weight: bold;
     color: #fff;
+    opacity: 0;
 }
 .a4 .a4-list1 p:nth-child(2){
     position: absolute;
-    top: 24%;
-    left: 37%;
+    top: 24.5%;
+    left: 28%;
     font-size: 25px;
     font-weight: bold;
     color: #fff;
+    opacity: 0;
 }
 .a4 .a4-list1 p:nth-child(3){
     position: absolute;
-    top: 34%;
-    left: 35%;
+    top: 34.5%;
+    left: 28%;
     font-size: 25px;
     font-weight: bold;
     color: #fff;
+    opacity: 0;
 }
 .a4 .a4-list1 p:nth-child(4){
     position: absolute;
-    top: 48%;
-    left: 44%;
+    top: 47.3%;
+    left: 28%;
     font-size: 25px;
     font-weight: bold;
     color: #fff;
+    opacity: 0;
 }
 .a4 .a4-list1 p:nth-child(5){
     position: absolute;
     top: 58%;
-    left: 29%;
+    left: 28%;
     font-size: 25px;
     font-weight: bold;
     color: #fff;
+    opacity: 0;
 }
 .a4 .a4-list1 p:nth-child(6){
     position: absolute;
-    top: 68%;
-    left: 21%;
+    top: 68.5%;
+    left: 28%;
     font-size: 25px;
     font-weight: bold;
     color: #fff;
+    opacity: 0;
 }
 .a4 .a4-list1 p:nth-child(7){
     position: absolute;
-    top: 79%;
-    left: 42%;
+    top: 79.5%;
+    left: 28%;
     font-size: 25px;
     font-weight: bold;
     color: #fff;
+    opacity: 0;
 }
 .a4 .a4-list1 p:nth-child(8){
     position: absolute;
-    top: 89%;
-    left: 49%;
+    top: 90%;
+    left: 28%;
     font-size: 25px;
     font-weight: bold;
     color: #fff;
+    opacity: 0;
 }
 .a4 .a4-list2 div{
+    overflow: hidden;
     position: absolute;
-    left: 28%;
+    left: 33%;
     width: 380px;
     height: 40px;
     background: #fff;
+    opacity: 0;
+}
+#a4 .a4-list2 div:nth-child(1){
+    animation:fadeInRight 0.4s ease 0.2s 1 both;
+    -webkit-animation:fadeInRight 0.4s ease 0.2s 1 both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
+}
+#a4 .a4-list2 div:nth-child(2){
+    animation:fadeInRight 0.4s ease 0.4s 1 both;
+    -webkit-animation:fadeInRight 0.4s ease 0.4s 1 both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
+}
+#a4 .a4-list2 div:nth-child(3){
+    animation:fadeInRight 0.4s ease 0.6s 1 both;
+    -webkit-animation:fadeInRight 0.4s ease 0.6s 1 both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
+}
+#a4 .a4-list2 div:nth-child(4){
+    animation:fadeInRight 0.4s ease 0.8s 1 both;
+    -webkit-animation:fadeInRight 0.4s ease 0.8s 1 both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
+}
+#a4 .a4-list2 div:nth-child(5){
+    animation:fadeInRight 0.4s ease 1s 1 both;
+    -webkit-animation:fadeInRight 0.4s ease 1s 1 both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
+}
+#a4 .a4-list2 div:nth-child(6){
+    animation:fadeInRight 0.4s ease 1.2s 1 both;
+    -webkit-animation:fadeInRight 0.4s ease 1.2s 1 both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
+}
+#a4 .a4-list2 div:nth-child(7){
+    animation:fadeInRight 0.4s ease 1.4s 1 both;
+    -webkit-animation:fadeInRight 0.4s ease 1.4s 1 both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
+}
+#a4 .a4-list2 div:nth-child(8){
+    animation:fadeInRight 0.4s ease 1.6s 1 both;
+    -webkit-animation:fadeInRight 0.4s ease 1.6s 1 both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
 }
 .a4 .a4-list2 div:nth-child(1){
-    top: 18.5%;
+    top: 19%;
 }
 .a4 .a4-list2 div:nth-child(2){
     top: 28.5%;
@@ -510,10 +779,10 @@ html,body{
     top: 38%;
 }
 .a4 .a4-list2 div:nth-child(4){
-    top: 48%;
+    top: 47.3%;
 }
 .a4 .a4-list2 div:nth-child(5){
-    top: 57%;
+    top: 56.5%;
 }
 .a4 .a4-list2 div:nth-child(6){
     top: 65.5%;
@@ -525,43 +794,103 @@ html,body{
     top: 83.5%;
 }
 .a4 .a4-list2 p{
+    padding-left: 20px;
     height: 100%;
     line-height: 40px;
     font-size: 20px;
     color: #fff;
     font-weight: bold;
 }
+#a4 .a4-list2 div:nth-child(1) p{
+    animation:fadeIn 0.8s ease 0.4s 1 both;
+    -webkit-animation:fadeIn 0.8s ease 0.4s 1 both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
+}
+#a4 .a4-list2 div:nth-child(2) p{
+    animation:fadeIn 0.8s ease 0.6s 1 both;
+    -webkit-animation:fadeIn 0.8s ease 0.6s 1 both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
+}
+#a4 .a4-list2 div:nth-child(3) p{
+    animation:fadeIn 0.8s ease 0.8s 1 both;
+    -webkit-animation:fadeIn 0.8s ease 0.8s 1 both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
+}
+#a4 .a4-list2 div:nth-child(4) p{
+    animation:fadeIn 0.8s ease 1s 1 both;
+    -webkit-animation:fadeIn 0.8s ease 1s 1 both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
+}
+#a4 .a4-list2 div:nth-child(5) p{
+    animation:fadeIn 0.8s ease 1.2s 1 both;
+    -webkit-animation:fadeIn 0.8s ease 1.2s 1 both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
+}
+#a4 .a4-list2 div:nth-child(6) p{
+    animation:fadeIn 0.8s ease 1.4s 1 both;
+    -webkit-animation:fadeIn 0.8s ease 1.4s 1 both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
+}
+#a4 .a4-list2 div:nth-child(7) p{
+    animation:fadeIn 0.8s ease 1.6s 1 both;
+    -webkit-animation:fadeIn 0.8s ease 1.6s 1 both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
+}
+#a4 .a4-list2 div:nth-child(8) p{
+    animation:fadeIn 0.8s ease 1.8s 1 both;
+    -webkit-animation:fadeIn 0.8s ease 1.8s 1 both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
+}
 .a4 .a4-list2 div:nth-child(1) p{
     width: 90%;
-    background: red;
+    background: lightcoral;
+    opacity: 0;
 }
 .a4 .a4-list2 div:nth-child(2) p{
     width: 70%;
+    /*background: orange;*/
     background: orange;
+    opacity: 0;
 }
 .a4 .a4-list2 div:nth-child(3) p{
     width: 65%;
-    background: rosybrown;
+    /*background: rosybrown;*/
+    background: lightseagreen;
+    opacity: 0;
 }
 .a4 .a4-list2 div:nth-child(4) p{
     width: 65%;
-    background: green;
+    /*background: green;*/
+    background: orchid;
+    opacity: 0;
 }
 .a4 .a4-list2 div:nth-child(5) p{
     width: 50%;
-    background: blue;
+    background: darkseagreen;
+    opacity: 0;
 }
 .a4 .a4-list2 div:nth-child(6) p{
     width: 80%;
-    background: springgreen;
+    background: cornflowerblue;
+    opacity: 0;
 }
 .a4 .a4-list2 div:nth-child(7) p{
     width: 50%;
-    background: blueviolet;
+    background: coral;
+    opacity: 0;
 }
 .a4 .a4-list2 div:nth-child(8) p{
     width: 55%;
-    background: cornflowerblue;
+    background:cadetblue;
+    opacity: 0;
 }
 .a5 h2{
     font-size: 85px;
@@ -570,6 +899,25 @@ html,body{
     position: absolute;
     top: 15%;
     left: 11%;
+    opacity: 0;
+}
+#a5 h2{
+    animation:fadeInDown 1s both ;
+    -webkit-animation:fadeInDown 1s both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
+}
+#a5 .a5-list1{
+    animation:fadeInDown 1s ease 0.4s both;
+    -webkit-animation:fadeInDown 1s ease 0.4s both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
+}
+#a5 .a5-list2{
+    animation:fadeInDown 1s ease 0.8s both;
+    -webkit-animation:fadeInDown 1s ease 0.8s both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
 }
 .a5 .a5-list1{
     position: absolute;
@@ -577,12 +925,13 @@ html,body{
     left: 21%;
     width: 120px;
     height: 300px;
+    opacity: 0;
 }
 .a5 .a5-list1 img{
     width: 100%;
     height: 100%;
 }
-.a5 p{
+.a5 .a5-list2{
     font-size: 26px;
     color: #fff;
     position: absolute;
@@ -590,6 +939,67 @@ html,body{
     left: 35.5%;
     width: 350px;
     height: 450px;
+    opacity: 0;
+}
+#a6 h2{
+    animation:fadeInLeft 0.6s ease 1 both;
+    -webkit-animation:fadeInLeft 0.6s ease 1 both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
+}
+#a6 .a6-list1{
+    animation:fadeInLeft 0.6s ease 0.2s 1 both;
+    -webkit-animation:fadeInLeft 0.6s ease 0.2s 1 both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
+}
+#a6 .a6-list2{
+    animation:fadeInUp 0.8s ease 0.2s 1 both;
+    -webkit-animation:fadeInUp 0.8s ease 0.2s 1 both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
+}
+#a6 .a6-list3{
+    animation:fadeInUp 0.8s ease 0.4s 1 both;
+    -webkit-animation:fadeInUp 0.8s ease 0.4s 1 both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
+}
+#a6 .a6-list4{
+    animation:fadeInUp 0.8s ease 0.6s 1 both;
+    -webkit-animation:fadeInUp 0.8s ease 0.6s 1 both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
+}
+#a6 .a6-list5{
+    animation:fadeInUp 0.8s ease 0.8s 1 both;
+    -webkit-animation:fadeInUp 0.8s ease 0.8s 1 both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
+}
+#a6 .a6-list6{
+    animation:fadeInRight 1s ease 0.7s 1 both;
+    -webkit-animation:fadeInRight 1s ease 0.7s 1 both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
+}
+#a6 .a6-list7{
+    animation:fadeInRight 1s ease 0.9s 1 both;
+    -webkit-animation:fadeInRight 1s ease 0.9s 1 both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
+}
+#a6 .a6-list8{
+    animation:fadeInRight 1s ease 1.1s 1 both;
+    -webkit-animation:fadeInRight 1s ease 1.1s 1 both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
+}
+#a6 .a6-list9{
+    animation:fadeInRight 1s ease 1.3s 1 both;
+    -webkit-animation:fadeInRight 1s ease 1.3s 1 both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
 }
 .a6 h2:nth-child(1){
     font-size: 45px;
@@ -599,6 +1009,7 @@ html,body{
     left: 14.5%;
     width: 400px;
     height: 200px;
+    opacity: 0;
 }
 .a6 h2:nth-child(2){
     font-size: 26px;
@@ -608,6 +1019,7 @@ html,body{
     left: 51.5%;
     width: 400px;
     height: 200px;
+    opacity: 0;
 }
 .a6 img{
     width: 100%;
@@ -620,39 +1032,41 @@ html,body{
     width: 450px;
     height: 200px;
     background: url("../img/6-5.png")no-repeat center;
+    opacity: 0;
 }
 .a6 .a6-list2{
     position: absolute;
     top: 45.5%;
     left: 15%;
-    opacity: 1;
     background-color: rgba(0,0,0,0.25);
     height: 88px;
     width: 88px;
+    opacity: 0;
 }
 .a6 .a6-list3{
     position: absolute;
     top: 54.5%;
     left: 15%;
-    opacity: 1;
     background-color: rgba(0,0,0,0.25);
     height: 88px;
     width: 88px;
+    opacity: 0;
 }
 .a6 .a6-list4{
     position: absolute;
     top: 63.5%;
     left: 15%;
-    opacity: 1;
+    opacity: 0;
     background-color: rgba(0,0,0,0.25);
     height: 88px;
     width: 88px;
+
 }
 .a6 .a6-list5{
     position: absolute;
     top: 72.5%;
     left: 15%;
-    opacity: 1;
+    opacity: 0;
     background-color: rgba(0,0,0,0.25);
     height: 88px;
     width: 88px;
@@ -661,7 +1075,7 @@ html,body{
     position: absolute;
     top: 45.5%;
     left: 29%;
-    opacity: 1;
+    opacity: 0;
     background-color: rgba(0,0,0,0.25);
     height: 88px;
     width: 355px;
@@ -670,7 +1084,7 @@ html,body{
     position: absolute;
     top: 54.5%;
     left: 29%;
-    opacity: 1;
+    opacity: 0;
     background-color: rgba(0,0,0,0.25);
     height: 88px;
     width: 355px;
@@ -679,7 +1093,7 @@ html,body{
     position: absolute;
     top: 63.5%;
     left: 29%;
-    opacity: 1;
+    opacity: 0;
     background-color: rgba(0,0,0,0.25);
     height: 88px;
     width: 355px;
@@ -688,7 +1102,7 @@ html,body{
     position: absolute;
     top: 72.5%;
     left: 29%;
-    opacity: 1;
+    opacity: 0;
     background-color: rgba(0,0,0,0.25);
     height: 88px;
     width: 355px;
@@ -699,6 +1113,42 @@ html,body{
     line-height: 88px;
     margin-left: 25px;
     font-weight: 200;
+}
+#a7{
+    animation:flipInY 1s ease 1 both;
+    -webkit-animation:flipInY 1s ease 1 both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
+}
+#a7 .a7-list1{
+    animation:zoomIn 1s ease 0.4s 1 both;
+    -webkit-animation:zoomIn 1s ease 0.4s 1 both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
+}
+#a7 h2{
+    animation:fadeInUp 1s ease 0.8s 1 both;
+    -webkit-animation:fadeInUp 1s ease 0.8s 1 both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
+}
+#a7 .a7-list2{
+    animation:zoomIn 1s ease 1s 1 both;
+    -webkit-animation:zoomIn 1s ease 1s 1 both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
+}
+#a7 .a7-list3{
+    animation:flipInX 1s ease 1s 1 both;
+    -webkit-animation:flipInX 1s ease 1s 1 both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
+}
+#a7 P{
+    animation:fadeIn 1s ease 1.2s 1 both;
+    -webkit-animation:fadeIn 1s ease 1.2s 1 both;
+    animation-play-state: initial;
+    -webkit-animation-play-state: initial;
 }
 .a7{
     width: 480px;
@@ -711,6 +1161,7 @@ html,body{
     margin-left: -240px;
     margin-top: -365px;
     box-shadow: 0 3px 10px 0 black;
+    opacity: 0;
 }
 .a7 img{
     width: 100%;

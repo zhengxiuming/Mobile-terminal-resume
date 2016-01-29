@@ -34,7 +34,7 @@ function move(e){
         }
         arguments[0].firstElementChild.id="";
 
-    })
+    });
     if(movePos>0){/*↓   movePos是正的值*/
         this.prevSIndex = (index == 0?oLis.length-1:index-1);
         //oLis[this.prevSIndex].style.webkitTransform = "translate(0,"+(-winH+movePos)+"px)";
@@ -62,5 +62,4 @@ function end(e){
     }
 }
 document.addEventListener("touchmove",function(){
-    console.log("1")
 },false);
