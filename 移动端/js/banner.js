@@ -63,3 +63,17 @@ function end(e){
 }
 document.addEventListener("touchmove",function(){
 },false);
+
+var audioBtn=document.querySelector("#audio-btn");
+var media=document.querySelector("#media");
+
+audioBtn.onclick = function(){
+    if (media.paused) {
+        media.play();
+        audioBtn.id="audio-btn";
+    }
+    else {
+        media.pause();
+        audioBtn.id="";
+    }
+};
